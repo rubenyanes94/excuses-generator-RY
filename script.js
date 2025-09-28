@@ -1,21 +1,20 @@
-// Arreglos con las partes de la excusa
-let who = ['El perro', 'Mi abuela', 'El cartero', 'Mi pájaro'];
-let action = ['se comió', 'orinó sobre', 'aplastó', 'rompió'];
-let what = ['mi tarea', 'mi teléfono', 'el carro'];
-let when = ['antes de la clase', 'cuando estaba durmiendo', 'mientras hacía ejercicio', 'durante mi almuerzo', 'mientras rezaba'];
+//step 1 Array for generate excuses
+let who = ['A dog', 'A stranger', 'My Grandma', 'My bother'];
+let action = ['stole my', 'pee on my', 'smash', 'broke'];
+let what = ['Homework', 'my phone', 'a car'];
+let when = ['This morning', 'on the street', 'in the park', 'tonight', 'in this moment'];
 
-// Función para generar un elemento aleatorio de un arreglo
-function generateRandomItem(arr) {
-    let randomIndex = Math.floor(Math.random() * arr.length);
-    return arr[randomIndex];
+//step 2 randomness fuction 
+function random(arr){
+    return arr[Math.floor(Math.random()* arr.length)];
 }
 
-// Función principal para generar la excusa completa
+//complete excuse function
 function generateExcuse() {
-    let randomWho = generateRandomItem(who);
-    let randomAction = generateRandomItem(action);
-    let randomWhat = generateRandomItem(what);
-    let randomWhen = generateRandomItem(when);
+    let randomWho = random(who);
+    let randomAction = random(action);
+    let randomWhat = random(what);
+    let randomWhen = random(when);
     
     return `${randomWho} ${randomAction} ${randomWhat} ${randomWhen}.`;
 }
