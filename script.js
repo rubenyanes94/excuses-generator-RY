@@ -1,8 +1,8 @@
 //step 1 Array for generate excuses
-let who = ['A dog', 'A stranger', 'My Grandma', 'My bother'];
-let action = ['stole my', 'pee on my', 'smash', 'broke'];
-let what = ['Homework', 'my phone', 'a car'];
-let when = ['This morning', 'on the street', 'in the park', 'tonight', 'in this moment'];
+let who = ['The dog', 'My grandma', 'The mailman', 'My bird'];
+let action = ['ate', 'peed', 'crushed', 'broke'];
+let what = ['my homework', 'my phone', 'the car'];
+let when = ['before the class', 'when I was sleeping', 'while I was exercising', 'during my lunch', 'while I was praying'];
 
 //step 2 randomness fuction 
 function random(arr){
